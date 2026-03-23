@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -17,10 +16,6 @@ namespace KalkNapiw2
         private double kwota_n;
         private double suma;
         private double kwota_o;
-
-        public string D_Suma;
-        public string D_Kwota_N;
-        public string D_Kwota_O;
 
         public double Kwota
         {
@@ -73,8 +68,6 @@ namespace KalkNapiw2
                 if (value != suma)
                 {
                     suma = value;
-                    D_Suma = $"{value:F2}";
-                    OnPropertyChanged("D_Suma");
                     OnPropertyChanged("Suma");
                     
                 }
@@ -89,8 +82,6 @@ namespace KalkNapiw2
                 {
                     kwota_n = value;
                     Kwota_O = value + Kwota;
-                    D_Suma = $"{value:F2}";
-                    OnPropertyChanged("D_Kwota_N");
                     OnPropertyChanged("Kwota_N");
                 }
             }
@@ -104,8 +95,6 @@ namespace KalkNapiw2
                 {
                     kwota_o = value;
                     Suma = value * Osoby;
-                    D_Suma = $"{value:F2}";
-                    OnPropertyChanged("D_Kwota_O");
                     OnPropertyChanged("Kwota_O");
                 }
             }
