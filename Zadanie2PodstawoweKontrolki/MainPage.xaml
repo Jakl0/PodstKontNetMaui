@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Zadanie2PodstawoweKontrolki.MainPage">
+
+    <ScrollView>
+        <Grid RowDefinitions="*,*,auto" ColumnDefinitions="*,*" >
+            
+            
+            <VerticalStackLayout Grid.Row="0" Grid.Column="0" >
+                <Label Style="{StaticResource Headline}" Text="Powiadomienia"/>
+
+                <HorizontalStackLayout Padding="10" Spacing="5">
+                    <Switch  VerticalOptions="Center" x:Name="push"/>
+                    <Label Text="Włącz powiadomienia push" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                
+                <HorizontalStackLayout Padding="10" Spacing="5">
+                    <Switch  VerticalOptions="Center" x:Name="email"/>
+                    <Label Text="Powiadomienia e-mail" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+                
+                <HorizontalStackLayout Padding="10" Spacing="5">
+                    <Switch  VerticalOptions="Center" x:Name="SMS"/>
+                    <Label Text="Powiadomienia SMS" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+
+            </VerticalStackLayout>
+            
+            
+            
+            <VerticalStackLayout Grid.Row="1" Grid.Column="0" >
+                <Label Style="{StaticResource Headline}" Text="Wygląd"/>
+
+                <HorizontalStackLayout Padding="10" Spacing="5">
+                    <Switch  VerticalOptions="Center" x:Name="darkmode" />
+                    <Label Text="Tryb ciemny" VerticalOptions="Center" />
+                </HorizontalStackLayout>
+
+                <Label Text="Rozmiar czcionki" HorizontalOptions="Center"/>
+
+                <Slider Maximum="24" Minimum="12" Value="{Binding FontSaiz}" x:Name="sliderrr"/>
+
+                <Label HorizontalOptions="Center" Text="{Binding FontSaiz}"/>
+            </VerticalStackLayout>
+            
+            
+            
+            <VerticalStackLayout Grid.Row="0" Grid.Column="1" >
+                <Label Style="{StaticResource Headline}" Text="Prywatność"/>
+
+                <HorizontalStackLayout Padding="10" Spacing="5">
+                    <CheckBox  VerticalOptions="Center" x:Name="dane_analityczne" />
+                    <Label Text="Udostępniaj dane analityczne" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout Padding="10" Spacing="5">
+                    <CheckBox  VerticalOptions="Center" x:Name="pers_reklamy" />
+                    <Label Text="Personalizowane reklamy" VerticalOptions="Center"/>
+                </HorizontalStackLayout>
+            </VerticalStackLayout>
+
+            <HorizontalStackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BackgroundColor="lightgray" Padding="20" Spacing="10">
+
+                <Button Text="Zapisz ustawienia" VerticalOptions="Center" BackgroundColor="orange" Clicked="onZapisz"/>
+                <Button Text="Przywróć domyślne" VerticalOptions="Center" BackgroundColor="gray" Clicked="onReset" />
+
+            </HorizontalStackLayout>
+            
+        </Grid>
+    </ScrollView>
+
+</ContentPage>

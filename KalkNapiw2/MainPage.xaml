@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="KalkNapiw2.MainPage">
+
+    <ScrollView>
+        <Grid RowDefinitions="auto,auto,auto,auto,auto" ColumnDefinitions="*,*,*" Padding="20" RowSpacing="20" ColumnSpacing="20">
+
+            <Entry Keyboard="Numeric" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="{Binding Kwota}" />
+
+            <Slider Maximum="30" Minimum="0" Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2" Value="{Binding Procent}"/>
+
+            <Label Grid.Row="1" Grid.Column="0"  HorizontalOptions="Center" Text="{Binding Procent, StringFormat='Procent Napiwku: {0}%'}"/>
+
+            <HorizontalStackLayout Grid.Row="2" Grid.Column="0">
+            <Switch HorizontalOptions="Center" VerticalOptions="Center" Toggled="onSwitched" />
+                <Label Text="Dzielenie" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </HorizontalStackLayout>
+
+            <Entry Text="{Binding Osoby}" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" x:Name="PeopleEntry" />
+
+            
+            <Label Grid.Row="3" Grid.Column="0" Text="{Binding Kwota_N, StringFormat='Kwota Napiwku: {0:F2} zł'}" HorizontalOptions="End"/>
+            <Label Grid.Row="3" Grid.Column="1" Text="{Binding Suma, StringFormat='Suma do Zapłaty: {0:F2} zł'}" HorizontalOptions="Center"/>
+            <Label Grid.Row="3" Grid.Column="2" Text="{Binding Kwota_O, StringFormat='Kwota na jedną osobę: {0:F2} zł'}" HorizontalOptions="Start"/>
+
+            <Button Grid.Row="4" Grid.Column="0" Text="10%" Command="{Binding SelectTen}"/>
+            <Button Grid.Row="4" Grid.Column="1" Text="15%" Command="{Binding SelectFifteen}"/>
+            <Button Grid.Row="4" Grid.Column="2" Text="20%" Command="{Binding SelectTwenty}"/>
+
+        </Grid>
+    </ScrollView>
+
+</ContentPage>
