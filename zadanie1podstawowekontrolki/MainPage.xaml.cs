@@ -29,3 +29,17 @@
         
     }
 }
+/*
+*************************************************************************************************
+
+nazwa funkcji: wyswietlAlert
+opis funkcji:  funkcja wyświetla komunikat po kliknięciu przycisku oraz czyści wszystkie pola tekstowe
+parametry:           podstawowe parametry funkcji w net maui
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+* *************************************************************************************************
+*/
