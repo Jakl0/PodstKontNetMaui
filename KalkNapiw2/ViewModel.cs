@@ -133,3 +133,42 @@ namespace KalkNapiw2
         }
     }
 }
+/*
+ ************************************************************************************************* 
+ 
+nazwa funkcji:        ten
+opis funkcji:        funkcja ustawia wartość slidera na 10
+parametry:           brak
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+**************************************************************************************************
+* ************************************************************************************************* 
+ 
+nazwa funkcji:        fiften
+opis funkcji:        funkcja ustawia wartość slidera na 15
+parametry:           brak
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+**************************************************************************************************
+* ************************************************************************************************* 
+ 
+nazwa funkcji:        twenty
+opis funkcji:        funkcja ustawia wartość slidera na 20
+parametry:           brak
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+**************************************************************************************************
+ */
+

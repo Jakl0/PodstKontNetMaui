@@ -26,3 +26,17 @@
        
     }
 }
+/*
+ ************************************************************************************************* 
+ 
+nazwa funkcji:        onSwitched
+opis funkcji:        funkcja obsługuje przełącznik który dzieli kwotę między ludzi jeśli jest włączony
+parametry:           standardowe parametry w funkcjach net maui
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+**************************************************************************************************
+ */
