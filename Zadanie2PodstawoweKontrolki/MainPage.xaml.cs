@@ -79,3 +79,18 @@ namespace Zadanie2PodstawoweKontrolki
 
         }
     }
+/*
+    ******************************************************************************************** 
+ 
+nazwa funkcji:        onZapisz
+opis funkcji:        Funkcja wyświetla komunikat zawierający informacje o opcjach wybranych przez użytkownika
+parametry:           podstawowe parametry net maui
+
+zwracany typ:        brak
+autor:               xxxxx
+
+
+
+*************************************************************************************************
+ */
+
